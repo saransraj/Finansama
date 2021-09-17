@@ -1,0 +1,25 @@
+<ion-grid class="sigiin">
+	<ion-row class="ion-justify-content-center">
+		<ion-col size="12" size-sm="8" size-md="5">
+			<ion-label class="sigiin__header">Finansama Login</ion-label>
+			<form class="sigiin__form" [formGroup]="sigiinForm"  (ngSubmit)="submitSiginin()">
+				<ion-row>
+					<mat-form-field class="sigiin__form-field1" appearance="outline">
+						<mat-label>Email Address</mat-label>
+						<input matInput type="email" formControlName="emailId" maxlength="35" required email>
+					</mat-form-field>
+				</ion-row>
+				<ion-row>
+					<mat-form-field class="sigiin__form-field1" appearance="outline">
+						<mat-label>Password</mat-label>
+						<input matInput type="password" formControlName="password" required>
+					</mat-form-field>
+				</ion-row>
+				<ion-row>
+					<ion-button class="sigiin__form-btn"  type="submit" >Signin</ion-button>
+				</ion-row>
+			</form>
+		</ion-col>
+	</ion-row>
+</ion-grid>
+

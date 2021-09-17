@@ -1,0 +1,12 @@
+.sigiin {
+    --background: url('/assets/images/back.jpg') no-repeat center center / cover;
+    &__grid {
+        display: table;
+        height: 90%;
+        &-row {
+            display: table-cell;
+            vertical-align: middle;
+            width: 70%;
+        }
+    }
+}

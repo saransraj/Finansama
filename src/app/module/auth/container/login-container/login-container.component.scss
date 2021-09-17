@@ -1,0 +1,12 @@
+.login {
+    --background: url('/assets/images/new.jpg') no-repeat center center / cover;
+    &__grid {
+        display: table;
+        height: 90%;
+        &-row {
+            display: table-cell;
+            vertical-align: middle;
+            width: 70%;
+        }
+    }
+}
